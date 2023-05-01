@@ -29,7 +29,7 @@ namespace Minesweeper.Core
             totalCount = boolField.GetLength(0) * boolField.GetLength(1);
         }
 
-        public GameState Open(int x, int y)
+        public GameState Open(int x, int y) 
         {
             if (GameState != GameState.Active)
                 throw new InvalidOperationException($"Game status is {GameState}");
