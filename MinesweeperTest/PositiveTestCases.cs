@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
-
-using Minesweeper.Core.Models;
+using Minesweeper.Core;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +9,13 @@ using System.Globalization;
 using Microsoft.VisualBasic;
 using System.Runtime.InteropServices;
 
-namespace Minesweeper.Core
+namespace MinesweeperCore.Test
 {
     [TestFixture]
     internal class PositiveTestCasesOpenMethod
     {
         bool[,] testField = new bool[9, 9];
-        GameProcessor gameProcessor;
+        Minesweeper.Core.GameProcessor gameProcessor;
 
         [SetUp]
         public void CreateField()
